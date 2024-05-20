@@ -5,24 +5,44 @@
     "type": "git",
     "url": "https://github.com/ryweal/kali.git"
   },
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "dist"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "mocha src/**/*.spec.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mime-types": "^2.1.4",
+    "@types/mocha": "^10.0.6",
     "@types/node": "^20.12.11",
+    "@types/sinon": "^17.0.3",
+    "@types/sinon-chai": "^3.2.12",
+    "chai": "^4.4.1",
+    "mocha": "^10.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^17.0.2",
+    "sinon-chai": "^3.7.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
     "fast-content-type-parse": "^1.1.0",
-    "typia": "^6.0.3",
+    "mime-types": "^2.1.35",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
-  }
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.js.map",
+    "LICENSE",
+    "README.md"
+  ]
 }
