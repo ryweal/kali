@@ -10,7 +10,7 @@
     "lib": "dist"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "test": "mocha src/**/*.spec.ts"
   },
   "keywords": [],
